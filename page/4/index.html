@@ -1,0 +1,317 @@
+<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Wang - 少说多做</title><meta name="description" content="一个正在努力的程序猿"><meta name="author" content="小小王,1442243445@qq.com"><meta name="copyright" content="小小王"><meta name="format-detection" content="telephone=no"><link rel="shortcut icon" href="/img/Banq-1.ico"><link rel="canonical" href="http://yoursite.com/page/4/"><meta http-equiv="Cache-Control" content="no-transform"><meta http-equiv="Cache-Control" content="no-siteapp"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="preconnect" href="//fonts.googleapis.com" crossorigin="crossorigin"/><link rel="preconnect" href="//busuanzi.ibruce.info"/><meta property="og:type" content="website"><meta property="og:title" content="Wang"><meta property="og:url" content="http://yoursite.com/page/4/"><meta property="og:site_name" content="Wang"><meta property="og:description" content="一个正在努力的程序猿"><meta property="og:image" content="http://yoursite.com/img/avatar.png"><meta property="article:published_time" content="2021-06-27T03:41:53.088Z"><meta property="article:modified_time" content="2021-06-27T03:41:53.088Z"><meta name="twitter:card" content="summary"><script>var activateDarkMode = function () {
+  document.documentElement.setAttribute('data-theme', 'dark')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000')
+  }
+}
+var activateLightMode = function () {
+  document.documentElement.setAttribute('data-theme', 'light')
+  if (document.querySelector('meta[name="theme-color"]') !== null) {
+    document.querySelector('meta[name="theme-color"]').setAttribute('content', '#fff')
+  }
+}
+
+var getCookies = function (name) {
+  const value = `; ${document.cookie}`
+  const parts = value.split(`; ${name}=`)
+  if (parts.length === 2) return parts.pop().split(';').shift()
+}
+
+var autoChangeMode = 'false'
+var t = getCookies('theme')
+if (autoChangeMode === '1') {
+  var isDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches
+  var isLightMode = window.matchMedia('(prefers-color-scheme: light)').matches
+  var isNotSpecified = window.matchMedia('(prefers-color-scheme: no-preference)').matches
+  var hasNoSupport = !isDarkMode && !isLightMode && !isNotSpecified
+
+  if (t === undefined) {
+    if (isLightMode) activateLightMode()
+    else if (isDarkMode) activateDarkMode()
+    else if (isNotSpecified || hasNoSupport) {
+      console.log('You specified no preference for a color scheme or your browser does not support it. I Schedule dark mode during night time.')
+      var now = new Date()
+      var hour = now.getHours()
+      var isNight = hour <= 6 || hour >= 18
+      isNight ? activateDarkMode() : activateLightMode()
+    }
+    window.matchMedia('(prefers-color-scheme: dark)').addListener(function (e) {
+      if (Cookies.get('theme') === undefined) {
+        e.matches ? activateDarkMode() : activateLightMode()
+      }
+    })
+  } else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else if (autoChangeMode === '2') {
+  now = new Date()
+  hour = now.getHours()
+  isNight = hour <= 6 || hour >= 18
+  if (t === undefined) isNight ? activateDarkMode() : activateLightMode()
+  else if (t === 'light') activateLightMode()
+  else activateDarkMode()
+} else {
+  if (t === 'dark') activateDarkMode()
+  else if (t === 'light') activateLightMode()
+}</script><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.css"><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web&amp;display=swap"><script>var GLOBAL_CONFIG = { 
+  root: '/',
+  algolia: undefined,
+  localSearch: {"path":"search.xml","languages":{"hits_empty":"找不到您查询的内容:${query}"}},
+  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"簡"},
+  copy: {
+    success: '复制成功',
+    error: '复制错误',
+    noSupport: '浏览器不支持'
+  },
+  bookmark: {
+    message_prev: '按',
+    message_next: '键将本页加入书签'
+  },
+  runtime_unit: '天',
+  runtime: false,
+  copyright: undefined,
+  ClickShowText: undefined,
+  medium_zoom: false,
+  fancybox: true,
+  Snackbar: undefined,
+  justifiedGallery: {
+    js: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/js/jquery.justifiedGallery.min.js',
+    css: 'https://cdn.jsdelivr.net/npm/justifiedGallery/dist/css/justifiedGallery.min.css'
+  },
+  baiduPush: false,
+  highlightCopy: true,
+  highlightLang: true,
+  isPhotoFigcaption: false,
+  islazyload: true,
+  isanchor: false    
+}</script><script>var GLOBAL_CONFIG_SITE = { 
+  isPost: false,
+  isHome: true,
+  isHighlightShrink: false,
+  isSidebar: false
+  }</script><noscript><style>
+#nav {
+  opacity: 1
+}
+.justified-gallery img{
+  opacity: 1
+}
+</style></noscript><link rel="stylesheet" href="/css/move_mouse/style.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/iconfont.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/css/pool.min.css"><meta name="generator" content="Hexo 4.2.1"></head><body><div id="mobile-sidebar"><div id="menu_mask"></div><div id="mobile-sidebar-menus"><div class="mobile_author_icon"><img class="avatar-img" src="/img/avatar.png" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="mobile_post_data"><div class="mobile_data_item is-center"><div class="mobile_data_link"><a href="/archives/"><div class="headline">文章</div><div class="length_num">58</div></a></div></div><div class="mobile_data_item is-center">      <div class="mobile_data_link"><a href="/tags/"><div class="headline">标签</div><div class="length_num">53</div></a></div></div><div class="mobile_data_item is-center">     <div class="mobile_data_link"><a href="/categories/"><div class="headline">分类</div><div class="length_num">38</div></a></div></div></div><hr/><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div></div></div><div id="body-wrap"><header class="full_page" id="page-header" style="background-image: url(https://i.loli.net/2020/05/01/IuWi8QbHvzjlOPw.jpg)"><nav id="nav"><span class="pull-left" id="blog_name"><a class="blog_title" id="site-name" href="/">Wang</a></span><span class="pull-right menus"><div id="search_button"><a class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page"><i class="fa-fw fas fa-list"></i><span> 娱乐</span><i class="fas fa-chevron-down menus-expand"></i></a><ul class="menus_item_child"><li><a class="site-page" href="/music/"><i class="fa-fw fas fa-music"></i><span> 音乐</span></a></li><li><a class="site-page" href="/movies/"><i class="fa-fw fas fa-video"></i><span> 电影</span></a></li></ul></div><div class="menus_item"><a class="site-page" href="/messageboard/"><i class="fa-fw fa fa-paper-plane"></i><span> 留言板</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友情链接</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div></div><span class="toggle-menu close"><a class="site-page"><i class="fas fa-bars fa-fw"></i></a></span></span></nav><div id="site-info"><h1 id="site_title">Wang</h1><div id="site_subtitle"><span id="subtitle"></span></div><div id="site_social_icons"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div><div id="scroll_down"><i class="fas fa-angle-down scroll-down-effects"></i></div></header><main class="layout_page" id="content-inner"><div class="recent-posts" id="recent-posts"><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/16/Consul/" title="Consul服务注册与发现">     <img class="post_bg" data-src="/img/bg9.jpg" onerror="this.onerror=null;this.src='/'" alt="Consul服务注册与发现"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/Consul/" title="Consul服务注册与发现">Consul服务注册与发现</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 14:05:23"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/springclound/">springclound</a></span></div><div class="content">Consul简介官网Consul是一套开源的分布式服务发现和配置管理系统，由HashiCorp公司用Go语言开发
+提供了微服务系统中的服务治理、配置中心、控制总线等功能，这些功能中的每一个都可以根据需要单独使用，也可以一起使用构建全方位的服务网路，总之Consul提供了一种完整的服务网络解决方案。
+它具有很多优点，包括：基于raft协议，比较简洁；支持健康检查，同时支持HTTP和DNS协议，支持跨数据中心的WAN集群，提供图形化界面，跨平台，支持Linux，MAC，Windows
+安装Consul
+到https://www.consul.io/downloads.html下载
+解压后cmd就到加压后的目录，consul –version可查看版本
+consul agent -dev启动访问即可—-http://localhost:8500/ui/dc1/services![在这里插入图片描述](https://img-blog.csdnimg.cn/20200617162130275.png?x-oss-process=image/watermark,type_ZmFuZ3poZW5n ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/16/Mysql_user/" title="关于mysql用户">     <img class="post_bg" data-src="/img/bg7.jpg" onerror="this.onerror=null;this.src='/'" alt="关于mysql用户"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/Mysql_user/" title="关于mysql用户">关于mysql用户</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/mysql/">mysql</a></span></div><div class="content">1.删除用指定户1delete from user where user='root' and host='%';
+
+2. 给用户授权1234--增删改GRANT select, insert, update, delete ON project_class.*  TO 'rgzx'@'%' IDENTIFIED BY 'rgzx@123321@' WITH GRANT OPTION;--所有grant all privileges on root.* to 'root'@'172.18.23.201' identified by 'root';
+
+3. 关于绑架的博客4.查看用户12use mysql;select user, host from user;
+5.刷新1flush privileges；
+6.创建用户1create user 'root'@'172.18.23.201' identified by 'root';
+7.docker登录1docker exec -it 容器名/容器id mysql -uroot -p root
+8.收回权限12-- REVOKE DRO ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/16/IDEA_Free%20Mybatis%20plugin/" title="IDEA插件Free Mybatis plugin">     <img class="post_bg" data-src="/img/bg5.jpg" onerror="this.onerror=null;this.src='/'" alt="IDEA插件Free Mybatis plugin"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/IDEA_Free%20Mybatis%20plugin/" title="IDEA插件Free Mybatis plugin">IDEA插件Free Mybatis plugin</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/idea/">idea</a></span></div><div class="content">IDEA 使用mybatis插件Free Mybatis plugin1. 安装
+因为我在idea中搜索不到，所以这先到idea插件官网下载下载好
+
+我的是2019.1版本的，选着如下
+
+接下来手动安装
+
+在settings—&gt;plugins
+
+
+
+
+选着自己的下载好的
+重启即可2. 使用效果
+下图第一个箭头可以点击直接去到对应的xml文件，第二个就可以直接去到对应xml文件中的对应sql
+下图箭头则可以回到对应的接口中
+
+</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/16/c++/" title="c++基础入门">     <img class="post_bg" data-src="/img/bg7.jpg" onerror="this.onerror=null;this.src='/'" alt="c++基础入门"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/c++/" title="c++基础入门">c++基础入门</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/c/">c++</a></span></div><div class="content">C++基础入门1 C++初识1.1  第一个C++程序编写一个C++程序总共分为4个步骤
+
+创建项目
+创建文件
+编写代码
+运行程序
+
+1.1.1 创建项目​    Visual Studio是我们用来编写C++程序的主要工具，我们先将它打开
+
+
+1.1.2 创建文件右键源文件，选择添加-&gt;新建项
+给C++文件起个名称，然后点击添加即可。
+
+1.1.3 编写代码1234567891011#include&lt;iostream&gt;using namespace std;int main() &#123;	cout &lt;&lt; "Hello world" &lt;&lt; endl;	system("pause");	return 0;&#125;
+
+1.1.4 运行程序
+1.2 注释作用：在代码中加一些说明和解释，方便自己或其他程序员程序员阅读代码
+两种格式
+
+单行注释：// 描述信息 
+通常放在一行代码的上方，或者一条语句的末尾，==对该行代码说明==
+
+
+多行注释： /* 描述信息 */
+通常放在一段代码的上方，==对该段代码做整体说明==
+
+
+
+
+提示：编译器在编译 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/16/es6/" title="ES6入门">     <img class="post_bg" data-src="/img/bg8.jpg" onerror="this.onerror=null;this.src='/'" alt="ES6入门"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/es6/" title="ES6入门">ES6入门</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/ES6/">ES6</a></span></div><div class="content">变量var存在的问题:
+可以重复声明
+无法限制修改
+没有块级作用域
+
+let的优势
+同一个块级作用域内不能重复声明
+可以修改
+有块级作用域
+
+const优势
+同一个块级作用域内不能重复声明
+不可以修改
+有块级作用域
+
+函数普通函数123function()&#123;    //函数体&#125;
+
+箭头函数123() =&gt; &#123;    //函数体&#125;
+
+
+
+1. 如果只有一个参数，（）可以省略2. 如果只有一个return语句，{}可以省略
+123456789101112let show=()=&gt;&#123;    alert("abc")&#125;// show();let show1= a =&gt; &#123;    alert(a)&#125;show1(777)let arr=[12,5,8,99,14,26]arr.sort((a,b) =&gt; &#123;    return a-b&#125;)
+
+
+函数参数参数扩展/展开
+收集剩余的参数（Rest Parameter剩余参数必须是最后一个）
+
+1234567function sho ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/16/idea/" title="Idea配置">     <img class="post_bg" data-src="/img/bg9.jpg" onerror="this.onerror=null;this.src='/'" alt="Idea配置"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/idea/" title="Idea配置">Idea配置</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/Idea/">Idea</a></span></div><div class="content">idea官方下载
+1.设置快捷键(Keymap)
+因爲一開始接觸的開發工具是eclipse，所以我将其快捷键设为eclipse的
+
+
+导入已有的设置
+
+2. 导入的快捷键
+
+
+
+#
+说明说明
+快捷键快捷键
+
+
+
+1
+执行(run)
+alt+r
+
+
+2
+提示补全 (Class Name Completion)
+alt+/
+
+
+3
+单行注释
+ctrl + /
+
+
+4
+.多行注释
+ctrl + shift + /
+
+
+5
+向下复制一行 (Duplicate Lines)
+ctrl+alt+down
+
+
+6
+删除一行或选中行 (delete line)
+ctrl+d
+
+
+7
+向下移动行(move statement down)
+alt+down
+
+
+8
+向上移动行(move statement up)
+alt+up
+
+
+9
+向下开始新的一行(start new line)
+shift+enter
+
+
+10
+向上开始新的一行 (Start New Line before current)
+ctrl+shift+enter
+
+
+11
+如何查看源码 (class)
+ctrl + 选中指定的结构 或  ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/16/linux_yuming/" title="linux域名配置">     <img class="post_bg" data-src="/img/bg6.jpg" onerror="this.onerror=null;this.src='/'" alt="linux域名配置"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/linux_yuming/" title="linux域名配置">linux域名配置</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/linux/">linux</a></span></div><div class="content">1.安装Nginx可见nginx笔记2.此处遇到坑Nginx配置SSL证书时——nginx:[emerg]unknown directive ssl错误
+
+因为以前安装的ngnix没有装，不用下载重装，步骤如下
+
+/configure –with-http_ssl_module  //重新添加这个ssl模块==注意如果没有出现错误，则直接看2即可==执行以上一条命令出现这个错误（./configure：错误：SSL模块需要OpenSSL库。），原因是因为缺少了OpenSSL，那我们再来安装一个即可执行：yum -y install openssl openssl-devel等待OpenSSL的安装完成后，再执行./configure ，最后在执行” 命令1” 即可。
+
+执行make命令，但是不要执行make install，因为make是用来编译的，而make install是安装，不然你整个nginx会重新覆盖的。
+在我们执行完做命令后，我们可以查看到在nginx解压目录下，objs文件夹中多了一个nginx的文件，这个就是新版本的程序了。首先我们把之前的nginx先备份一下，然后把 ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/16/react-expanding/" title="react-拓展">     <img class="post_bg" data-src="/img/bg4.jpg" onerror="this.onerror=null;this.src='/'" alt="react-拓展"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/16/react-expanding/" title="react-拓展">react-拓展</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-16 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-16</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/react-expanding/">react-expanding</a></span></div><div class="content">1. setStatesetState更新状态的2种写法123456789101112131415(1). setState(stateChange, [callback])------对象式的setState        1.stateChange为状态改变对象(该对象可以体现出状态的更改)        2.callback是可选的回调函数, 它在状态更新完毕、界面也更新后(render调用后)才被调用                (2). setState(updater, [callback])------函数式的setState        1.updater为返回stateChange对象的函数。        2.updater可以接收到state和props。        4.callback是可选的回调函数, 它在状态更新、界面也更新后(render调用后)才被调用。总结:    1.对象式的setState是函数式的setState的简写方式(语法糖)    2.使用原则：            (1).如果新状态不依赖于原状态 ===&gt; 使用对象方式 ...</div></div></div><div class="recent-post-item"><div class="post_cover left_radius"><a href="/2020/07/11/springclound_All/" title="springclound汇总">     <img class="post_bg" data-src="/img/bg8.jpg" onerror="this.onerror=null;this.src='/'" alt="springclound汇总"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/11/springclound_All/" title="springclound汇总">springclound汇总</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-11 09:28:24"><i class="far fa-calendar-alt"></i>2020-07-11</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/springclound/">springclound</a></span></div><div class="content">谈谈你对微服务的理解微服务架构下的一整套解决方案
+
+服务注册与发现
+服务调用
+服务熔断
+负载均衡
+服务降级
+服务消息队列
+配置中心
+服务网关
+服务监控
+全链路追踪
+自动化构建部署
+服务定时任务调度操作
+
+
+Spring Cloud分布式微服务架构的一站式解决方案，是多种微服务架构落地技术的集合体，俗称微服务全家桶
+下面一张图是京东的促销架构
+阿里的架构图：
+
+京东物流的架构图：
+基础服务：
+Spring Cloud技术栈这是原来2020年以前的微服务方案
+但是随着Eureka等组件的闭源，后续的一些解决方案也有了新的替换产品
+Spring Cloud版本选型SpringBoot2.X版 和 SpringCloud H版SpringBoot官方已经强烈推荐 2.X版
+SpringCloud采用英国伦敦地铁站的名称来命名，并由地铁站名称字母A-Z一次类推的形式发布迭代版本
+SpringCloud是由许多子项目组成的综合项目，各子项目有不同的发布节奏，为了管理SpringCloud与各子项目的版本依赖关系，发布了一个清单，其中包括了某个SpringCloud版对应的子项目版本，为了避免Spr ...</div></div></div><div class="recent-post-item"><div class="post_cover right_radius"><a href="/2020/07/10/Shiro/" title="Shiro学习笔记">     <img class="post_bg" data-src="/img/bg4.jpg" onerror="this.onerror=null;this.src='/'" alt="Shiro学习笔记"></a></div><div class="recent-post-info"><a class="article-title" href="/2020/07/10/Shiro/" title="Shiro学习笔记">Shiro学习笔记</a><div class="article-meta-wrap"><time class="post-meta__date" title="发表于 2020-07-10 19:28:24"><i class="far fa-calendar-alt"></i>2020-07-10</time><span class="article-meta"><span class="article-meta__separator">|</span><i class="fas fa-inbox article-meta__icon"></i><a class="article-meta__categories" href="/categories/shiro/">shiro</a></span></div><div class="content">shiro
+快速掌握SpringBoot与Shiro安全框架的整合使用一 、    Shiro框架简介
+Apache Shiro是一个强大且易用的Java安全框架，执行身份验证、授权、密码学和会话管理。使用Shiro的易于理解的API,您可以快速、轻松地获得任何应用程序,从最小的移动应用程序到最大的网络和企业应用程序。
+Apache Shiro 体系结构 
+
+
+
+==Authentication 认证 —- 用户登录==
+==Authorization 授权 — 用户具有哪些权限==
+Cryptography 安全数据加密 
+Session Management 会话管理 
+Interations 集成其它应用，spring、缓存框架二 、3.    Spring Boot快速入门1、    建立项目，spring initial快速搭建
+创建Controller编写userController类测试2、    引入thymeleaf依赖12345&lt;!-- thymeleaf --&gt;  &lt;dependency&gt;			&lt;groupId&gt;org.spri ...</div></div></div><nav id="pagination"><div class="pagination"><a class="extend prev" rel="prev" href="/page/3/"><i class="fas fa-chevron-left fa-fw"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/3/">3</a><span class="page-number current">4</span><a class="page-number" href="/page/5/">5</a><a class="page-number" href="/page/6/">6</a><a class="extend next" rel="next" href="/page/5/"><i class="fas fa-chevron-right fa-fw"></i></a></div></nav></div><div class="aside_content" id="aside_content"><div class="card-widget card-info"><div class="card-content"><div class="card-info-avatar is-center"><img class="avatar-img" src="/img/avatar.png" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/><div class="author-info__name">小小王</div><div class="author-info__description">一个正在努力的程序猿</div></div><div class="card-info-data"><div class="card-info-data-item is-center"><a href="/archives"><div class="headline">文章</div><div class="length_num">58</div></a></div><div class="card-info-data-item is-center">      <a href="/tags"><div class="headline">标签</div><div class="length_num">53</div></a></div><div class="card-info-data-item is-center">     <a href="/categories"><div class="headline">分类</div><div class="length_num">38</div></a></div></div><div class="card-info-bookmark is-center"><button class="button--animated" id="bookmark-it" title="加入书签"><i class="fas fa-bookmark"></i><span>加入书签</span></button></div><div class="card-info-social-icons is-center"><a class="social-icon" href="https://github.com/xxxxx" target="_blank" title="Github"><i class="fab fa-github"></i></a><a class="social-icon" href="mailto:xxxxxx@gmail.com" target="_blank" title="Email"><i class="fas fa-envelope"></i></a></div></div></div><div class="card-widget card-announcement"><div class="card-content"><div class="item-headline"><i class="fas fa-bullhorn card-announcement-animation"></i><span>公告</span></div><div class="announcement_content">This is my Blog</div></div></div><div class="card-widget card-recent-post"><div class="card-content"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-recent-item"><div class="aside-recent-post"><a href="/2021/01/19/Gulp/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/bg4.jpg" onerror="this.onerror=null;this.src='/'" title="Gulp入门" alt="Gulp入门"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/01/19/Gulp/" title="Gulp入门">Gulp入门</div><time class="aside-post_meta post-meta__date" title="发表于 2021-01-19 11:28:24">2021-01-19</time></div></a></div><div class="aside-recent-post"><a href="/2021/01/19/Sass/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/bg7.jpg" onerror="this.onerror=null;this.src='/'" title="Sass学习" alt="Sass学习"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/01/19/Sass/" title="Sass学习">Sass学习</div><time class="aside-post_meta post-meta__date" title="发表于 2021-01-19 11:28:24">2021-01-19</time></div></a></div><div class="aside-recent-post"><a href="/2021/01/16/Vue4/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/bg.jpg" onerror="this.onerror=null;this.src='/'" title="Vue3新特性" alt="Vue3新特性"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/01/16/Vue4/" title="Vue3新特性">Vue3新特性</div><time class="aside-post_meta post-meta__date" title="发表于 2021-01-16 11:28:24">2021-01-16</time></div></a></div><div class="aside-recent-post"><a href="/2021/01/16/bk/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/bg6.jpg" onerror="this.onerror=null;this.src='/'" title="springclound" alt="springclound"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/01/16/bk/" title="springclound">springclound</div><time class="aside-post_meta post-meta__date" title="发表于 2021-01-16 11:28:24">2021-01-16</time></div></a></div><div class="aside-recent-post"><a href="/2021/01/16/egg/"><div class="aside-post-cover"><img class="aside-post-bg" data-src="/img/bg6.jpg" onerror="this.onerror=null;this.src='/'" title="egg" alt="egg"/></div><div class="aside-post-title"><div class="aside-post_title" href="/2021/01/16/egg/" title="egg">egg</div><time class="aside-post_meta post-meta__date" title="发表于 2021-01-16 11:28:24">2021-01-16</time></div></a></div></div></div></div><div class="card-widget card-categories"><div class="card-content"><div class="item-headline"><i class="fas fa-folder-open"></i><span>分类</span></div><ul class="card-category-list">
+            <li class="card-category-list-item "><a class="card-category-list-link" href="/categories/AOP/"><span class="card-category-list-name">AOP</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Design-patterns/"><span class="card-category-list-name">Design patterns</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Draw/"><span class="card-category-list-name">Draw</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/ES6/"><span class="card-category-list-name">ES6</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Front-end-questions/"><span class="card-category-list-name">Front end questions</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Front-end-based/"><span class="card-category-list-name">Front-end based</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Gulp/"><span class="card-category-list-name">Gulp</span><span class="card-category-list-count">1</span></a></li><li class="card-category-list-item "><a class="card-category-list-link" href="/categories/Http/"><span class="card-category-list-name">Http</span><span class="card-category-list-count">1</span></a></li>
+            <li class="card-category-list-item more is-center"><a class="card-category-list-link-more" href="/categories">
+                <span>查看更多</span><i class="fas fa-angle-right"></i></a></li>           
+            </ul></div></div><div class="card-widget card-tags"><div class="card-content"><div class="item-headline"><i class="fas fa-tags"></i><span>标签</span></div><div class="card-tag-cloud"><a href="/tags/AOP/" style="font-size: 16px; color: #999">AOP</a> <a href="/tags/Consul/" style="font-size: 16px; color: #999">Consul</a> <a href="/tags/DNS/" style="font-size: 16px; color: #999">DNS</a> <a href="/tags/Design-patterns/" style="font-size: 16px; color: #999">Design patterns</a> <a href="/tags/Draw/" style="font-size: 16px; color: #999">Draw</a> <a href="/tags/ES6/" style="font-size: 16px; color: #999">ES6</a> <a href="/tags/Egg/" style="font-size: 16px; color: #999">Egg</a> <a href="/tags/Eureka/" style="font-size: 16px; color: #999">Eureka</a> <a href="/tags/Free-Mybatis-plugin/" style="font-size: 16px; color: #999">Free Mybatis plugin</a> <a href="/tags/Front-end-questions/" style="font-size: 16px; color: #999">Front end questions</a> <a href="/tags/Front-end-based/" style="font-size: 16px; color: #999">Front-end based</a> <a href="/tags/Gateway/" style="font-size: 16px; color: #999">Gateway</a> <a href="/tags/Gulp/" style="font-size: 16px; color: #999">Gulp</a> <a href="/tags/Http/" style="font-size: 16px; color: #999">Http</a> <a href="/tags/Hystrix/" style="font-size: 16px; color: #999">Hystrix</a> <a href="/tags/Idea/" style="font-size: 16px; color: #999">Idea</a> <a href="/tags/JVM/" style="font-size: 16px; color: #999">JVM</a> <a href="/tags/KOA/" style="font-size: 16px; color: #999">KOA</a> <a href="/tags/MongoDb/" style="font-size: 16px; color: #999">MongoDb</a> <a href="/tags/Nacos/" style="font-size: 16px; color: #999">Nacos</a> <a href="/tags/NodeJs/" style="font-size: 16px; color: #999">NodeJs</a> <a href="/tags/OpenFeign/" style="font-size: 16px; color: #999">OpenFeign</a> <a href="/tags/Python/" style="font-size: 16px; color: #999">Python</a> <a href="/tags/React/" style="font-size: 16px; color: #999">React</a> <a href="/tags/React-Router/" style="font-size: 16px; color: #999">React Router</a> <a href="/tags/Ribbon/" style="font-size: 16px; color: #999">Ribbon</a> <a href="/tags/Sass/" style="font-size: 16px; color: #999">Sass</a> <a href="/tags/Seata/" style="font-size: 16px; color: #999">Seata</a> <a href="/tags/Sentinel/" style="font-size: 16px; color: #999">Sentinel</a> <a href="/tags/SpringCloud-Stream/" style="font-size: 16px; color: #999">SpringCloud Stream</a> <a href="/tags/SpringCloudBUS/" style="font-size: 16px; color: #999">SpringCloudBUS</a> <a href="/tags/SpringCloudConfig/" style="font-size: 16px; color: #999">SpringCloudConfig</a> <a href="/tags/SpringCloudSleuth/" style="font-size: 16px; color: #999">SpringCloudSleuth</a> <a href="/tags/SpringSecurity/" style="font-size: 16px; color: #999">SpringSecurity</a> <a href="/tags/Swagger/" style="font-size: 16px; color: #999">Swagger</a> <a href="/tags/Vue3/" style="font-size: 16px; color: #999">Vue3</a> <a href="/tags/Zookeeper/" style="font-size: 16px; color: #999">Zookeeper</a> <a href="/tags/c/" style="font-size: 16px; color: #999">c++</a> <a href="/tags/elasticsearch/" style="font-size: 16px; color: #999">elasticsearch</a> <a href="/tags/error/" style="font-size: 16px; color: #999">error</a></div></div></div><div class="card-widget card-archives"><div class="card-content"><div class="item-headline"><i class="fas fa-archive"></i><span>归档</span></div><ul class="card-archive-list"><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2021/01/"><span class="card-archive-list-date">一月 2021</span><span class="card-archive-list-count">12</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/12/"><span class="card-archive-list-date">十二月 2020</span><span class="card-archive-list-count">6</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/11/"><span class="card-archive-list-date">十一月 2020</span><span class="card-archive-list-count">7</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/10/"><span class="card-archive-list-date">十月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/09/"><span class="card-archive-list-date">九月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/07/"><span class="card-archive-list-date">七月 2020</span><span class="card-archive-list-count">25</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/06/"><span class="card-archive-list-date">六月 2020</span><span class="card-archive-list-count">3</span></a></li><li class="card-archive-list-item"><a class="card-archive-list-link" href="/archives/2020/05/"><span class="card-archive-list-date">五月 2020</span><span class="card-archive-list-count">1</span></a></li><li class="card-archive-list-item more is-center"><a class="card-archive-list-link-more" href="/archives">
+              <span>查看更多</span><i class="fas fa-angle-right"  ></i></a></li></ul></div></div><div class="card-widget card-webinfo"><div class="card-content"><div class="item-headline"><i class="fas fa-chart-line"></i><span>网站资讯</span></div><div class="webinfo"><div class="webinfo-item"><div class="webinfo-article-name">文章数目 :</div><div class="webinfo-article-count">58</div></div><div class="webinfo-item">      <div class="webinfo-site-uv-name">本站访客数 :</div><div class="webinfo-site-uv-count" id="busuanzi_value_site_uv"></div></div><div class="webinfo-item"><div class="webinfo-site-name">本站总访问量 :</div><div class="webinfo-site-pv-count" id="busuanzi_value_site_pv"></div></div></div></div></div></div></main><footer id="footer" data-type="color"><div id="footer-wrap"><div class="copyright">&copy;2020 - 2021 By 小小王</div><div class="framework-info"><span>驱动 </span><a href="https://hexo.io" target="_blank" rel="noopener"><span>Hexo</span></a><span class="footer-separator">|</span><span>主题 </span><a href="https://github.com/jerryc127/hexo-theme-butterfly" target="_blank" rel="noopener"><span>Butterfly</span></a></div><div class="icp"><a href="http://beian.miit.gov.cn" target="_blank" rel="noopener"><img class="icp-icon" src="/img/icp.png"/><span>粤ICP备20054751</span></a></div></div></footer></div><section class="rightside" id="rightside"><div id="rightside-config-hide"><button class="translate_chn_to_cht" id="translateLink" title="简繁转换">繁</button><button id="darkmode" title="浅色和深色模式转换"><i class="fas fa-adjust"></i></button></div><div id="rightside-config-show"><button id="rightside_config" title="设置"><i class="fas fa-cog"></i></button><button id="go-up" title="回到顶部"><i class="fas fa-arrow-up"></i></button></div></section><div class="search-dialog" id="local-search"><div class="search-dialog__title" id="local-search-title">本地搜索</div><div id="local-input-panel"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div></div><hr/><div id="local-search-results"><div id="local-hits"></div><div id="local-stats"><div class="local-search-stats__hr" id="hr"><span>由</span> <a href="https://github.com/wzpan/hexo-generator-search" target="_blank" rel="noopener" style="color:#49B1F5;">hexo-generator-search</a>
+ <span>提供支持</span></div></div></div><span class="search-close-button"><i class="fas fa-times"></i></span></div><div class="search-mask"></div><script src="https://cdn.jsdelivr.net/npm/jquery@latest/dist/jquery.min.js"></script><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/fancybox@latest/dist/jquery.fancybox.min.js"></script><script id="ribbon_piao" mobile="true" src="/js/third-party/piao.js"></script><script id="canvas_nest" color="0,0,255" opacity="0.7" zIndex="-1" count="99" mobile="false" src="/js/third-party/canvas-nest.js"></script><script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script><script src="https://cdn.jsdelivr.net/npm/instant.page/instantpage.min.js" type="module" defer></script><script src="https://cdn.jsdelivr.net/npm/vanilla-lazyload/dist/lazyload.iife.min.js" async></script><script src="/js/search/local-search.js"></script><script src="https://cdn.jsdelivr.net/npm/typed.js"></script><script>var subtitleEffect = true
+if (subtitleEffect) { 
+  var typed = new Typed("#subtitle", {
+    strings: "今日事&#44;今日畢,Never put off till tomorrow what you can do today".split(","),
+    startDelay: 300,
+    typeSpeed: 150,
+    loop: true,
+    backSpeed: 50
+  })
+} else {
+  document.getElementById("subtitle").innerHTML = '今日事&#44;今日畢'
+}</script><script src="js/move_mouse/script.js"></script><script src="https://cdn.jsdelivr.net/gh/sviptzk/StaticFile_HEXO@latest/butterfly/js/pool.min.js"></script><script src="/js/down_mouse/love.js"></script></body></html>
